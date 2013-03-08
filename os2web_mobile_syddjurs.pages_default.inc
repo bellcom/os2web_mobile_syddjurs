@@ -104,7 +104,10 @@ function os2web_mobile_syddjurs_default_page_manager_pages() {
     $pane->style = array(
       'settings' => NULL,
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'well',
+    );
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
@@ -164,9 +167,15 @@ function os2web_mobile_syddjurs_default_page_manager_pages() {
   js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, \'script\', \'facebook-jssdk\'));</script>
+<div class="well">
 <h2>Facebook</h2>
 <div class="fb-like-box" data-href="https://www.facebook.com/syddjurskommune" data-width="292" data-show-faces="false" data-stream="false" data-header="false"></div>
-<p><a href="https://www.facebook.com/syddjurskommune" >Få nyheder og information, deltag i debatten</a></p>',
+<p><a href="https://www.facebook.com/syddjurskommune" >Få nyheder og information, deltag i debatten</a></p>
+</div>
+
+<div class="fixed-bottom">
+<a href="#contact">Kontakt <i class="icon-chevron-down"></i></a>
+</div>',
       'format' => 'raw',
       'substitute' => TRUE,
     );
@@ -195,7 +204,10 @@ function os2web_mobile_syddjurs_default_page_manager_pages() {
     $pane->style = array(
       'settings' => NULL,
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => 'contact',
+      'css_class' => 'well',
+    );
     $pane->extras = array();
     $pane->position = 3;
     $pane->locks = array();
