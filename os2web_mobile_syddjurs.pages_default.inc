@@ -58,7 +58,7 @@ function os2web_mobile_syddjurs_default_page_manager_pages() {
     ),
   );
   $display = new panels_display();
-  $display->layout = 'flexible:sektionsforside';
+  $display->layout = 'os2web_mobile';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
@@ -70,6 +70,7 @@ function os2web_mobile_syddjurs_default_page_manager_pages() {
       'center' => NULL,
       'top' => NULL,
       'bund' => NULL,
+      'bottom' => NULL,
     ),
   );
   $display->cache = array();
@@ -78,7 +79,7 @@ function os2web_mobile_syddjurs_default_page_manager_pages() {
   $display->panels = array();
     $pane = new stdClass();
     $pane->pid = 'new-1';
-    $pane->panel = 'bund';
+    $pane->panel = 'bottom';
     $pane->type = 'views';
     $pane->subtype = 'os2web_mobile_news';
     $pane->shown = TRUE;
@@ -108,10 +109,10 @@ function os2web_mobile_syddjurs_default_page_manager_pages() {
     $pane->position = 0;
     $pane->locks = array();
     $display->content['new-1'] = $pane;
-    $display->panels['bund'][0] = 'new-1';
+    $display->panels['bottom'][0] = 'new-1';
     $pane = new stdClass();
     $pane->pid = 'new-2';
-    $pane->panel = 'bund';
+    $pane->panel = 'bottom';
     $pane->type = 'views';
     $pane->subtype = 'os2web_mobile_news';
     $pane->shown = TRUE;
@@ -141,17 +142,33 @@ function os2web_mobile_syddjurs_default_page_manager_pages() {
     $pane->position = 1;
     $pane->locks = array();
     $display->content['new-2'] = $pane;
-    $display->panels['bund'][1] = 'new-2';
+    $display->panels['bottom'][1] = 'new-2';
     $pane = new stdClass();
     $pane->pid = 'new-3';
-    $pane->panel = 'bund';
-    $pane->type = 'block';
-    $pane->subtype = 'block-10';
+    $pane->panel = 'bottom';
+    $pane->type = 'custom';
+    $pane->subtype = 'custom';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'override_title' => 1,
-      'override_title_text' => '',
+      'admin_title' => 'Syddjurs specifik',
+      'title' => '<none>',
+      'body' => '<a href="http://webkort.syddjurs.dk" target="_blank" class="btn btn-block"><h3 style="display: inline;">Digitale kort</h3> - se kommunens kort</a>
+<br />
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, \'script\', \'facebook-jssdk\'));</script>
+<h2>Facebook</h2>
+<div class="fb-like-box" data-href="https://www.facebook.com/syddjurskommune" data-width="292" data-show-faces="false" data-stream="false" data-header="false"></div>
+<p><a href="https://www.facebook.com/syddjurskommune" >Få nyheder og information, deltag i debatten</a></p>',
+      'format' => 'raw',
+      'substitute' => TRUE,
     );
     $pane->cache = array();
     $pane->style = array(
@@ -162,10 +179,10 @@ function os2web_mobile_syddjurs_default_page_manager_pages() {
     $pane->position = 2;
     $pane->locks = array();
     $display->content['new-3'] = $pane;
-    $display->panels['bund'][2] = 'new-3';
+    $display->panels['bottom'][2] = 'new-3';
     $pane = new stdClass();
     $pane->pid = 'new-4';
-    $pane->panel = 'bund';
+    $pane->panel = 'bottom';
     $pane->type = 'block';
     $pane->subtype = 'block-6';
     $pane->shown = TRUE;
@@ -183,7 +200,7 @@ function os2web_mobile_syddjurs_default_page_manager_pages() {
     $pane->position = 3;
     $pane->locks = array();
     $display->content['new-4'] = $pane;
-    $display->panels['bund'][3] = 'new-4';
+    $display->panels['bottom'][3] = 'new-4';
     $pane = new stdClass();
     $pane->pid = 'new-5';
     $pane->panel = 'center';
