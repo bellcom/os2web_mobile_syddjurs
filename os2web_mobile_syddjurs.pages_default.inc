@@ -172,10 +172,7 @@ function os2web_mobile_syddjurs_default_page_manager_pages() {
 <div class="fb-like-box" data-href="https://www.facebook.com/syddjurskommune" data-width="292" data-show-faces="false" data-stream="false" data-header="false"></div>
 <p><a href="https://www.facebook.com/syddjurskommune" >Få nyheder og information, deltag i debatten</a></p>
 </div>
-
-<div class="fixed-bottom">
-<a href="#contact">Kontakt <i class="icon-chevron-down"></i></a>
-</div>',
+',
       'format' => 'raw',
       'substitute' => TRUE,
     );
@@ -215,6 +212,24 @@ function os2web_mobile_syddjurs_default_page_manager_pages() {
     $display->panels['bottom'][3] = 'new-4';
     $pane = new stdClass();
     $pane->pid = 'new-5';
+    $pane->panel = 'bottom';
+    $pane->type = 'os2web_mobile_pane';
+    $pane->subtype = 'os2web_mobile_pane';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array();
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 4;
+    $pane->locks = array();
+    $display->content['new-5'] = $pane;
+    $display->panels['bottom'][4] = 'new-5';
+    $pane = new stdClass();
+    $pane->pid = 'new-6';
     $pane->panel = 'center';
     $pane->type = 'block';
     $pane->subtype = 'menu_block-OS2Web_mobile-15';
@@ -232,10 +247,10 @@ function os2web_mobile_syddjurs_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-5'] = $pane;
-    $display->panels['center'][0] = 'new-5';
+    $display->content['new-6'] = $pane;
+    $display->panels['center'][0] = 'new-6';
     $pane = new stdClass();
-    $pane->pid = 'new-6';
+    $pane->pid = 'new-7';
     $pane->panel = 'center';
     $pane->type = 'block';
     $pane->subtype = 'menu_block-OS2Web_mobile-16';
@@ -253,10 +268,10 @@ function os2web_mobile_syddjurs_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 1;
     $pane->locks = array();
-    $display->content['new-6'] = $pane;
-    $display->panels['center'][1] = 'new-6';
+    $display->content['new-7'] = $pane;
+    $display->panels['center'][1] = 'new-7';
     $pane = new stdClass();
-    $pane->pid = 'new-7';
+    $pane->pid = 'new-8';
     $pane->panel = 'center';
     $pane->type = 'block';
     $pane->subtype = 'menu_block-OS2Web_mobile-17';
@@ -274,10 +289,10 @@ function os2web_mobile_syddjurs_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 2;
     $pane->locks = array();
-    $display->content['new-7'] = $pane;
-    $display->panels['center'][2] = 'new-7';
+    $display->content['new-8'] = $pane;
+    $display->panels['center'][2] = 'new-8';
     $pane = new stdClass();
-    $pane->pid = 'new-8';
+    $pane->pid = 'new-9';
     $pane->panel = 'center';
     $pane->type = 'block';
     $pane->subtype = 'menu_block-OS2Web_mobile-20';
@@ -295,10 +310,10 @@ function os2web_mobile_syddjurs_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 3;
     $pane->locks = array();
-    $display->content['new-8'] = $pane;
-    $display->panels['center'][3] = 'new-8';
+    $display->content['new-9'] = $pane;
+    $display->panels['center'][3] = 'new-9';
     $pane = new stdClass();
-    $pane->pid = 'new-9';
+    $pane->pid = 'new-10';
     $pane->panel = 'top';
     $pane->type = 'block';
     $pane->subtype = 'search-form';
@@ -316,10 +331,10 @@ function os2web_mobile_syddjurs_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-9'] = $pane;
-    $display->panels['top'][0] = 'new-9';
+    $display->content['new-10'] = $pane;
+    $display->panels['top'][0] = 'new-10';
     $pane = new stdClass();
-    $pane->pid = 'new-10';
+    $pane->pid = 'new-11';
     $pane->panel = 'top';
     $pane->type = 'block';
     $pane->subtype = 'menu_block-OS2Web_mobile-21';
@@ -340,8 +355,8 @@ function os2web_mobile_syddjurs_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 1;
     $pane->locks = array();
-    $display->content['new-10'] = $pane;
-    $display->panels['top'][1] = 'new-10';
+    $display->content['new-11'] = $pane;
+    $display->panels['top'][1] = 'new-11';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
