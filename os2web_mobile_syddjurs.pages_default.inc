@@ -106,7 +106,7 @@ function os2web_mobile_syddjurs_default_page_manager_pages() {
     );
     $pane->css = array(
       'css_id' => '',
-      'css_class' => 'well',
+      'css_class' => '',
     );
     $pane->extras = array();
     $pane->position = 0;
@@ -190,6 +190,27 @@ function os2web_mobile_syddjurs_default_page_manager_pages() {
     $pane->pid = 'new-4';
     $pane->panel = 'bottom';
     $pane->type = 'block';
+    $pane->subtype = 'search-form';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 1,
+      'override_title_text' => 'Søg',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 3;
+    $pane->locks = array();
+    $display->content['new-4'] = $pane;
+    $display->panels['bottom'][3] = 'new-4';
+    $pane = new stdClass();
+    $pane->pid = 'new-5';
+    $pane->panel = 'bottom';
+    $pane->type = 'block';
     $pane->subtype = 'block-6';
     $pane->shown = TRUE;
     $pane->access = array();
@@ -206,12 +227,12 @@ function os2web_mobile_syddjurs_default_page_manager_pages() {
       'css_class' => 'well',
     );
     $pane->extras = array();
-    $pane->position = 3;
+    $pane->position = 4;
     $pane->locks = array();
-    $display->content['new-4'] = $pane;
-    $display->panels['bottom'][3] = 'new-4';
+    $display->content['new-5'] = $pane;
+    $display->panels['bottom'][4] = 'new-5';
     $pane = new stdClass();
-    $pane->pid = 'new-5';
+    $pane->pid = 'new-6';
     $pane->panel = 'bottom';
     $pane->type = 'os2web_mobile_pane';
     $pane->subtype = 'os2web_mobile_pane';
@@ -224,12 +245,12 @@ function os2web_mobile_syddjurs_default_page_manager_pages() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 4;
+    $pane->position = 5;
     $pane->locks = array();
-    $display->content['new-5'] = $pane;
-    $display->panels['bottom'][4] = 'new-5';
+    $display->content['new-6'] = $pane;
+    $display->panels['bottom'][5] = 'new-6';
     $pane = new stdClass();
-    $pane->pid = 'new-6';
+    $pane->pid = 'new-7';
     $pane->panel = 'center';
     $pane->type = 'block';
     $pane->subtype = 'menu_block-OS2Web_mobile-15';
@@ -247,10 +268,10 @@ function os2web_mobile_syddjurs_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-6'] = $pane;
-    $display->panels['center'][0] = 'new-6';
+    $display->content['new-7'] = $pane;
+    $display->panels['center'][0] = 'new-7';
     $pane = new stdClass();
-    $pane->pid = 'new-7';
+    $pane->pid = 'new-8';
     $pane->panel = 'center';
     $pane->type = 'block';
     $pane->subtype = 'menu_block-OS2Web_mobile-16';
@@ -268,10 +289,10 @@ function os2web_mobile_syddjurs_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 1;
     $pane->locks = array();
-    $display->content['new-7'] = $pane;
-    $display->panels['center'][1] = 'new-7';
+    $display->content['new-8'] = $pane;
+    $display->panels['center'][1] = 'new-8';
     $pane = new stdClass();
-    $pane->pid = 'new-8';
+    $pane->pid = 'new-9';
     $pane->panel = 'center';
     $pane->type = 'block';
     $pane->subtype = 'menu_block-OS2Web_mobile-17';
@@ -289,10 +310,10 @@ function os2web_mobile_syddjurs_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 2;
     $pane->locks = array();
-    $display->content['new-8'] = $pane;
-    $display->panels['center'][2] = 'new-8';
+    $display->content['new-9'] = $pane;
+    $display->panels['center'][2] = 'new-9';
     $pane = new stdClass();
-    $pane->pid = 'new-9';
+    $pane->pid = 'new-10';
     $pane->panel = 'center';
     $pane->type = 'block';
     $pane->subtype = 'menu_block-OS2Web_mobile-20';
@@ -310,29 +331,8 @@ function os2web_mobile_syddjurs_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 3;
     $pane->locks = array();
-    $display->content['new-9'] = $pane;
-    $display->panels['center'][3] = 'new-9';
-    $pane = new stdClass();
-    $pane->pid = 'new-10';
-    $pane->panel = 'top';
-    $pane->type = 'block';
-    $pane->subtype = 'search-form';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'override_title' => 1,
-      'override_title_text' => 'Søg',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
     $display->content['new-10'] = $pane;
-    $display->panels['top'][0] = 'new-10';
+    $display->panels['center'][3] = 'new-10';
     $pane = new stdClass();
     $pane->pid = 'new-11';
     $pane->panel = 'top';
@@ -350,13 +350,13 @@ function os2web_mobile_syddjurs_default_page_manager_pages() {
     );
     $pane->css = array(
       'css_id' => '',
-      'css_class' => 'no-toggle',
+      'css_class' => '',
     );
     $pane->extras = array();
-    $pane->position = 1;
+    $pane->position = 0;
     $pane->locks = array();
     $display->content['new-11'] = $pane;
-    $display->panels['top'][1] = 'new-11';
+    $display->panels['top'][0] = 'new-11';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
