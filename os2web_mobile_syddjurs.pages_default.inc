@@ -106,7 +106,7 @@ function os2web_mobile_syddjurs_default_page_manager_pages() {
     );
     $pane->css = array(
       'css_id' => '',
-      'css_class' => '',
+      'css_class' => 'pane-content-well',
     );
     $pane->extras = array();
     $pane->position = 0;
@@ -140,7 +140,10 @@ function os2web_mobile_syddjurs_default_page_manager_pages() {
     $pane->style = array(
       'settings' => NULL,
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'news-list pane-content-well',
+    );
     $pane->extras = array();
     $pane->position = 1;
     $pane->locks = array();
@@ -156,7 +159,7 @@ function os2web_mobile_syddjurs_default_page_manager_pages() {
     $pane->configuration = array(
       'admin_title' => 'Syddjurs specifik',
       'title' => '<none>',
-      'body' => '<a href="http://webkort.syddjurs.dk" target="_blank" class="btn btn-block"><h3 style="display: inline;">Digitale kort</h3> - se kommunens kort</a>
+      'body' => '<a href="http://webkort.syddjurs.dk" target="_blank" class="btn btn-block btn-syddjurs"><h3 style="display: inline;">Digitale kort</h3> - se kommunens kort</a>
 <br />
 
 <div id="fb-root"></div>
