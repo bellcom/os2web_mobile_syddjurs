@@ -167,10 +167,12 @@ function os2web_mobile_syddjurs_default_page_manager_pages() {
   js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, \'script\', \'facebook-jssdk\'));</script>
-<div class="well">
+
 <h2>Facebook</h2>
+<div class="well">
 <div class="fb-like-box" data-href="https://www.facebook.com/syddjurskommune" data-width="292" data-show-faces="false" data-stream="false" data-header="false"></div>
 <p><a href="https://www.facebook.com/syddjurskommune" >Få nyheder og information, deltag i debatten</a></p>
+</div>
 </div>
 ',
       'format' => 'raw',
@@ -224,7 +226,7 @@ function os2web_mobile_syddjurs_default_page_manager_pages() {
     );
     $pane->css = array(
       'css_id' => 'contact',
-      'css_class' => 'well',
+      'css_class' => 'pane-content-well',
     );
     $pane->extras = array();
     $pane->position = 4;
