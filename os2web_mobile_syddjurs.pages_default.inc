@@ -159,7 +159,7 @@ function os2web_mobile_syddjurs_default_page_manager_pages() {
     $pane->configuration = array(
       'admin_title' => 'Syddjurs specifik',
       'title' => '<none>',
-      'body' => '<a href="http://webkort.syddjurs.dk" target="_blank" class="btn btn-block btn-syddjurs btn-kort"><i class="digitale-kort"></i></a>
+      'body' => '<a href="http://webkort.syddjurs.dk" target="_blank" class="btn btn-block btn-syddjurs btn-kort"><h3>Digitale kort</h3></a>
 <br />
 
 <div id="fb-root"></div>
